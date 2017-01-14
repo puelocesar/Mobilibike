@@ -7,15 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3184DB1E2A61F700EAED83 /* AuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184DA1E2A61F700EAED83 /* AuthInfo.m */; };
+		3A3184E01E2A63B700EAED83 /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184DF1E2A63B700EAED83 /* LoginForm.m */; };
+		3A3184E61E2A693D00EAED83 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184E51E2A693D00EAED83 /* LoginController.m */; };
+		3A3184E91E2A8DBE00EAED83 /* BikeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184E81E2A8DBE00EAED83 /* BikeService.m */; };
+		3A3184EF1E2A927B00EAED83 /* UIViewController+AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184EE1E2A927B00EAED83 /* UIViewController+AlertUtil.m */; };
+		3A3184F41E2A933E00EAED83 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184F31E2A933E00EAED83 /* RegisterController.m */; };
+		3A3184F71E2A937000EAED83 /* RegisterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184F61E2A937000EAED83 /* RegisterForm.m */; };
 		3AFA614E1E2A5D18005003EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA614D1E2A5D18005003EB /* main.m */; };
 		3AFA61511E2A5D18005003EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA61501E2A5D18005003EB /* AppDelegate.m */; };
 		3AFA61541E2A5D18005003EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA61531E2A5D18005003EB /* ViewController.m */; };
 		3AFA61571E2A5D18005003EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA61551E2A5D18005003EB /* Main.storyboard */; };
 		3AFA61591E2A5D18005003EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA61581E2A5D18005003EB /* Assets.xcassets */; };
 		3AFA615C1E2A5D18005003EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA615A1E2A5D18005003EB /* LaunchScreen.storyboard */; };
+		C61715F2F5CF6DC3D7D05829 /* Pods_MobiliBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558DCB88BA024339D430892B /* Pods_MobiliBike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3184D91E2A61F700EAED83 /* AuthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthInfo.h; sourceTree = "<group>"; };
+		3A3184DA1E2A61F700EAED83 /* AuthInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthInfo.m; sourceTree = "<group>"; };
+		3A3184DE1E2A63B700EAED83 /* LoginForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginForm.h; sourceTree = "<group>"; };
+		3A3184DF1E2A63B700EAED83 /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
+		3A3184E41E2A693D00EAED83 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		3A3184E51E2A693D00EAED83 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		3A3184E71E2A8DBE00EAED83 /* BikeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeService.h; sourceTree = "<group>"; };
+		3A3184E81E2A8DBE00EAED83 /* BikeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeService.m; sourceTree = "<group>"; };
+		3A3184ED1E2A927B00EAED83 /* UIViewController+AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertUtil.h"; sourceTree = "<group>"; };
+		3A3184EE1E2A927B00EAED83 /* UIViewController+AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertUtil.m"; sourceTree = "<group>"; };
+		3A3184F21E2A933E00EAED83 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		3A3184F31E2A933E00EAED83 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		3A3184F51E2A937000EAED83 /* RegisterForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterForm.h; sourceTree = "<group>"; };
+		3A3184F61E2A937000EAED83 /* RegisterForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterForm.m; sourceTree = "<group>"; };
 		3AFA61491E2A5D18005003EB /* MobiliBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiliBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFA614D1E2A5D18005003EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AFA614F1E2A5D18005003EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +48,9 @@
 		3AFA61581E2A5D18005003EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AFA615B1E2A5D18005003EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFA615D1E2A5D18005003EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558DCB88BA024339D430892B /* Pods_MobiliBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiliBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22B32C77A06BDB394CE289C /* Pods-MobiliBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiliBike/Pods-MobiliBike.debug.xcconfig"; sourceTree = "<group>"; };
+		E4F15FC270EBB1578CA616C7 /* Pods-MobiliBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobiliBike/Pods-MobiliBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +58,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61715F2F5CF6DC3D7D05829 /* Pods_MobiliBike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3184F01E2A92E100EAED83 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3A3184D91E2A61F700EAED83 /* AuthInfo.h */,
+				3A3184DA1E2A61F700EAED83 /* AuthInfo.m */,
+				3A3184DE1E2A63B700EAED83 /* LoginForm.h */,
+				3A3184DF1E2A63B700EAED83 /* LoginForm.m */,
+				3A3184E41E2A693D00EAED83 /* LoginController.h */,
+				3A3184E51E2A693D00EAED83 /* LoginController.m */,
+				3A3184F21E2A933E00EAED83 /* RegisterController.h */,
+				3A3184F31E2A933E00EAED83 /* RegisterController.m */,
+				3A3184F51E2A937000EAED83 /* RegisterForm.h */,
+				3A3184F61E2A937000EAED83 /* RegisterForm.m */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		3A3184F11E2A92FA00EAED83 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3AFA61551E2A5D18005003EB /* Main.storyboard */,
+				3AFA61581E2A5D18005003EB /* Assets.xcassets */,
+				3AFA615A1E2A5D18005003EB /* LaunchScreen.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		3AFA61401E2A5D18005003EB = {
 			isa = PBXGroup;
 			children = (
 				3AFA614B1E2A5D18005003EB /* MobiliBike */,
 				3AFA614A1E2A5D18005003EB /* Products */,
+				D9D6794CD84CDCC036FF9BEF /* Pods */,
+				DBB22CE28DAC5ABB2527F41E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +113,13 @@
 		3AFA614B1E2A5D18005003EB /* MobiliBike */ = {
 			isa = PBXGroup;
 			children = (
-				3AFA614F1E2A5D18005003EB /* AppDelegate.h */,
-				3AFA61501E2A5D18005003EB /* AppDelegate.m */,
+				3A3184F01E2A92E100EAED83 /* Auth */,
 				3AFA61521E2A5D18005003EB /* ViewController.h */,
 				3AFA61531E2A5D18005003EB /* ViewController.m */,
-				3AFA61551E2A5D18005003EB /* Main.storyboard */,
-				3AFA61581E2A5D18005003EB /* Assets.xcassets */,
-				3AFA615A1E2A5D18005003EB /* LaunchScreen.storyboard */,
-				3AFA615D1E2A5D18005003EB /* Info.plist */,
+				3A3184F11E2A92FA00EAED83 /* Interface */,
 				3AFA614C1E2A5D18005003EB /* Supporting Files */,
+				3A3184E71E2A8DBE00EAED83 /* BikeService.h */,
+				3A3184E81E2A8DBE00EAED83 /* BikeService.m */,
 			);
 			path = MobiliBike;
 			sourceTree = "<group>";
@@ -74,9 +127,31 @@
 		3AFA614C1E2A5D18005003EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AFA615D1E2A5D18005003EB /* Info.plist */,
 				3AFA614D1E2A5D18005003EB /* main.m */,
+				3AFA614F1E2A5D18005003EB /* AppDelegate.h */,
+				3AFA61501E2A5D18005003EB /* AppDelegate.m */,
+				3A3184ED1E2A927B00EAED83 /* UIViewController+AlertUtil.h */,
+				3A3184EE1E2A927B00EAED83 /* UIViewController+AlertUtil.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9D6794CD84CDCC036FF9BEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D22B32C77A06BDB394CE289C /* Pods-MobiliBike.debug.xcconfig */,
+				E4F15FC270EBB1578CA616C7 /* Pods-MobiliBike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DBB22CE28DAC5ABB2527F41E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				558DCB88BA024339D430892B /* Pods_MobiliBike.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AFA61601E2A5D18005003EB /* Build configuration list for PBXNativeTarget "MobiliBike" */;
 			buildPhases = (
+				42ADC2B24EF6A95994D12C1D /* [CP] Check Pods Manifest.lock */,
 				3AFA61451E2A5D18005003EB /* Sources */,
 				3AFA61461E2A5D18005003EB /* Frameworks */,
 				3AFA61471E2A5D18005003EB /* Resources */,
+				03E29A89C80AAF3552DB3AF1 /* [CP] Embed Pods Frameworks */,
+				82133C1D6727C507C69A7FD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,14 +224,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03E29A89C80AAF3552DB3AF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobiliBike/Pods-MobiliBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42ADC2B24EF6A95994D12C1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82133C1D6727C507C69A7FD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobiliBike/Pods-MobiliBike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AFA61451E2A5D18005003EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3184E91E2A8DBE00EAED83 /* BikeService.m in Sources */,
+				3A3184DB1E2A61F700EAED83 /* AuthInfo.m in Sources */,
 				3AFA61541E2A5D18005003EB /* ViewController.m in Sources */,
+				3A3184E01E2A63B700EAED83 /* LoginForm.m in Sources */,
+				3A3184F71E2A937000EAED83 /* RegisterForm.m in Sources */,
 				3AFA61511E2A5D18005003EB /* AppDelegate.m in Sources */,
+				3A3184F41E2A933E00EAED83 /* RegisterController.m in Sources */,
+				3A3184EF1E2A927B00EAED83 /* UIViewController+AlertUtil.m in Sources */,
 				3AFA614E1E2A5D18005003EB /* main.m in Sources */,
+				3A3184E61E2A693D00EAED83 /* LoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +404,7 @@
 		};
 		3AFA61611E2A5D18005003EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22B32C77A06BDB394CE289C /* Pods-MobiliBike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T635734XY9;
@@ -283,6 +417,7 @@
 		};
 		3AFA61621E2A5D18005003EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F15FC270EBB1578CA616C7 /* Pods-MobiliBike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T635734XY9;
@@ -312,6 +447,7 @@
 				3AFA61621E2A5D18005003EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,23 +7,24 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "AuthInfo.h"
+#import "LoginForm.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    if (![AuthInfo token]) {
+        [self performSegueWithIdentifier:@"auth" sender:self];
+    }
 }
 
+- (IBAction)lougout:(id)sender {
+    [AuthInfo clearToken];
+    [self performSegueWithIdentifier:@"auth" sender:self];
+}
 
 @end

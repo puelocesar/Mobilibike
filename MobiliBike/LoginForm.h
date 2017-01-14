@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginForm.h
 //  MobiliBike
 //
 //  Created by Paulo Cesar on 14/01/17.
@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <FXForms/FXForms.h>
 
-@interface ViewController : UIViewController
+@interface LoginForm : NSObject <FXForm>
 
+@property NSString* client_id;
+@property NSString* client_secret;
 
 @end
-

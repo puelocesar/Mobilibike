@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIViewController+AlertUtil.h
 //  MobiliBike
 //
 //  Created by Paulo Cesar on 14/01/17.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FXForms/FXForms.h>
 
-@interface ViewController : UIViewController
+@interface UIViewController (AlertUtil)
 
+-(void)showAlertWithMessage:(NSString*)message;
 
 @end
-
