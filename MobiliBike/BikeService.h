@@ -14,4 +14,10 @@
 
 +(void)registerWithParams:(NSDictionary*)params completionHandler:(void (^)(NSString* token, NSString* tokenType, NSDate* expirationDate, NSError *error))completeBlock;
 
++(void)getCompanyInfoWithCompletionHandler:(void (^)(NSString *companyId, NSString* email, NSError* error))completeBlock;
+
++(void)getPriceWithDistance:(int)distance completionHandler:(void (^)(NSNumber* price, NSError* error))completeBlock;
+
++(void)postRace:(NSDictionary*)params completionHandler:(void (^)(NSString* raceID, NSError* error))completeBlock;
+
 @end

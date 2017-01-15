@@ -85,4 +85,90 @@
     }];
 }
 
++(void)getCompanyInfoWithCompletionHandler:(void (^)(NSString *, NSString *, NSError *))completeBlock {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://testemobilibike.azurewebsites.net/api/company"]];
+    
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:[AuthInfo sharedInstance].token forHTTPHeaderField:@"Authorization"];
+    
+    [self executeRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        
+        if (error) {
+            @try {
+                NSError *e = [NSError errorWithDomain:@"BikeService" code:142 userInfo:@{ NSLocalizedDescriptionKey: responseObject[@"error_description"]}];
+                completeBlock(nil, nil, e);
+            }
+            @catch (NSException *exception) {
+                //uses default error message
+                completeBlock(nil, nil, error);
+            }
+        } else {
+            @try {
+                completeBlock(responseObject[@"id"], responseObject[@"email"], nil);
+            }
+            @catch (NSException *exception) {
+                NSError *e = [NSError errorWithDomain:@"BikeService" code:142 userInfo:@{ NSLocalizedDescriptionKey: e.localizedDescription}];
+                completeBlock(nil, nil, e);
+            }
+        }
+    }];
+}
+
++(void)postRace:(NSDictionary *)params completionHandler:(void (^)(NSString *, NSError *))completeBlock {
+    NSMutableURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:@"http://testemobilibike.azurewebsites.net/api/race" parameters:params error:nil];
+    
+    [request addValue:[AuthInfo sharedInstance].token forHTTPHeaderField:@"Authorization"];
+    
+    [self executeRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            @try {
+                NSMutableArray* modelErrors = [[NSMutableArray alloc] init];
+                for (NSArray* modelError in [responseObject[@"modelState"] allValues]) {
+                    for (NSString* mError in modelError) {
+                        [modelErrors addObject:mError];
+                    }
+                }
+                
+                NSString* errorsMessage = [modelErrors componentsJoinedByString:@"\n"];
+                NSError *e = [NSError errorWithDomain:@"BikeService" code:142 userInfo:@{ NSLocalizedDescriptionKey: errorsMessage}];
+                completeBlock(nil, e);
+            }
+            @catch (NSException *exception) {
+                //uses default error message
+                completeBlock(nil, error);
+            }
+        } else {
+            completeBlock(nil, nil);
+        }
+    }];
+}
+
++(void)getPriceWithDistance:(int)distance completionHandler:(void (^)(NSNumber *, NSError *))completeBlock {
+    
+    NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%d", @"http://testemobilibike.azurewebsites.net/api/raceprice", distance]];
+    
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    
+    [self executeRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            @try {
+                NSError *e = [NSError errorWithDomain:@"BikeService" code:142 userInfo:@{ NSLocalizedDescriptionKey: responseObject[@"error_description"]}];
+                completeBlock(nil, e);
+            }
+            @catch (NSException *exception) {
+                //uses default error message
+                completeBlock(nil, error);
+            }
+        } else {
+            @try {
+                completeBlock(responseObject[@"price"], nil);
+            }
+            @catch (NSException *exception) {
+                NSError *e = [NSError errorWithDomain:@"BikeService" code:142 userInfo:@{ NSLocalizedDescriptionKey: e.localizedDescription}];
+                completeBlock(nil, e);
+            }
+        }
+    }];
+}
+
 @end

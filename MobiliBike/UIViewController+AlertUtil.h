@@ -10,6 +10,7 @@
 
 @interface UIViewController (AlertUtil)
 
+-(void)showAlertWithTitle:(NSString*)title message:(NSString*)message;
 -(void)showAlertWithMessage:(NSString*)message;
 
 @end

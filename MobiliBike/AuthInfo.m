@@ -10,28 +10,59 @@
 
 @implementation AuthInfo
 
-+(NSString*)token {
-    NSDate* expirationDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"expirationDate"];
++ (AuthInfo *)sharedInstance
+{
+    static AuthInfo * sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[AuthInfo alloc] init];
+        [sharedInstance setup];
+    });
+    return sharedInstance;
+}
+
+-(void)setup {
+    self.expirationDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"expirationDate"];
     
-    if ([expirationDate compare:[[NSDate alloc] init]] == NSOrderedAscending) {
+    if ([self.expirationDate compare:[[NSDate alloc] init]] == NSOrderedAscending) {
         [self clearToken];
-        return nil;
     }
-    else
-        return [[NSUserDefaults standardUserDefaults] stringForKey:@"token"];
+    else {
+        self.token = [[NSUserDefaults standardUserDefaults] stringForKey:@"token"];
+        self.email = [[NSUserDefaults standardUserDefaults] stringForKey:@"email"];
+        self.companyId = [[NSUserDefaults standardUserDefaults] stringForKey:@"companyId"];
+    }
 }
 
-+(void)updateToken:(NSString *)token type:(NSString *)type expiration:(NSDate *)expirationDate {
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[NSString stringWithFormat:@"%@ %@", type, token] forKey:@"token"];
-    [defaults setObject:expirationDate forKey:@"expirationDate"];
-    [defaults synchronize];
+-(void)updateCompanyInfo:(NSString*)companyId email:(NSString*)email {
+    self.companyId = companyId;
+    self.email = email;
+    
+    [self syncData];
 }
 
-+(void)clearToken {
+-(void)updateToken:(NSString *)token type:(NSString *)type expiration:(NSDate *)expirationDate {
+    self.token = [NSString stringWithFormat:@"%@ %@", type, token];
+    self.expirationDate = expirationDate;
+    
+    [self syncData];
+}
+
+-(void)clearToken {
+    self.token = nil;
+    self.expirationDate = nil;
+    self.companyId = nil;
+    self.email = nil;
+    
+    [self syncData];
+}
+
+-(void)syncData {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:nil forKey:@"token"];
-    [defaults setObject:nil forKey:@"expirationDate"];
+    [defaults removeObjectForKey:@"companyId"];
+    [defaults removeObjectForKey:@"email"];
+    [defaults removeObjectForKey:@"token"];
+    [defaults removeObjectForKey:@"expirationDate"];
     [defaults synchronize];
 }
 

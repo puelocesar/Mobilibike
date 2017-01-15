@@ -14,6 +14,10 @@
 		3A3184EF1E2A927B00EAED83 /* UIViewController+AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184EE1E2A927B00EAED83 /* UIViewController+AlertUtil.m */; };
 		3A3184F41E2A933E00EAED83 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184F31E2A933E00EAED83 /* RegisterController.m */; };
 		3A3184F71E2A937000EAED83 /* RegisterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184F61E2A937000EAED83 /* RegisterForm.m */; };
+		3A3184FB1E2BB6A100EAED83 /* DeliverForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184FA1E2BB6A100EAED83 /* DeliverForm.m */; };
+		3A3184FE1E2BBA7900EAED83 /* DeliverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3184FD1E2BBA7900EAED83 /* DeliverController.m */; };
+		3A3185011E2BC45E00EAED83 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3185001E2BC45E00EAED83 /* MapController.m */; };
+		3A3185031E2BC62000EAED83 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3185021E2BC62000EAED83 /* MapKit.framework */; };
 		3AFA614E1E2A5D18005003EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA614D1E2A5D18005003EB /* main.m */; };
 		3AFA61511E2A5D18005003EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA61501E2A5D18005003EB /* AppDelegate.m */; };
 		3AFA61541E2A5D18005003EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA61531E2A5D18005003EB /* ViewController.m */; };
@@ -38,6 +42,13 @@
 		3A3184F31E2A933E00EAED83 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		3A3184F51E2A937000EAED83 /* RegisterForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterForm.h; sourceTree = "<group>"; };
 		3A3184F61E2A937000EAED83 /* RegisterForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterForm.m; sourceTree = "<group>"; };
+		3A3184F91E2BB6A100EAED83 /* DeliverForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliverForm.h; sourceTree = "<group>"; };
+		3A3184FA1E2BB6A100EAED83 /* DeliverForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliverForm.m; sourceTree = "<group>"; };
+		3A3184FC1E2BBA7900EAED83 /* DeliverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliverController.h; sourceTree = "<group>"; };
+		3A3184FD1E2BBA7900EAED83 /* DeliverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliverController.m; sourceTree = "<group>"; };
+		3A3184FF1E2BC45E00EAED83 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		3A3185001E2BC45E00EAED83 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		3A3185021E2BC62000EAED83 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3AFA61491E2A5D18005003EB /* MobiliBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiliBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFA614D1E2A5D18005003EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AFA614F1E2A5D18005003EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3185031E2BC62000EAED83 /* MapKit.framework in Frameworks */,
 				C61715F2F5CF6DC3D7D05829 /* Pods_MobiliBike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +104,28 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		3A3184F81E2BB68800EAED83 /* Deliver */ = {
+			isa = PBXGroup;
+			children = (
+				3A3184F91E2BB6A100EAED83 /* DeliverForm.h */,
+				3A3184FA1E2BB6A100EAED83 /* DeliverForm.m */,
+				3A3184FC1E2BBA7900EAED83 /* DeliverController.h */,
+				3A3184FD1E2BBA7900EAED83 /* DeliverController.m */,
+				3A3184FF1E2BC45E00EAED83 /* MapController.h */,
+				3A3185001E2BC45E00EAED83 /* MapController.m */,
+			);
+			name = Deliver;
+			sourceTree = "<group>";
+		};
+		3A3185041E2BE10600EAED83 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3AFA61521E2A5D18005003EB /* ViewController.h */,
+				3AFA61531E2A5D18005003EB /* ViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		3AFA61401E2A5D18005003EB = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +147,9 @@
 		3AFA614B1E2A5D18005003EB /* MobiliBike */ = {
 			isa = PBXGroup;
 			children = (
+				3A3185041E2BE10600EAED83 /* Home */,
 				3A3184F01E2A92E100EAED83 /* Auth */,
-				3AFA61521E2A5D18005003EB /* ViewController.h */,
-				3AFA61531E2A5D18005003EB /* ViewController.m */,
+				3A3184F81E2BB68800EAED83 /* Deliver */,
 				3A3184F11E2A92FA00EAED83 /* Interface */,
 				3AFA614C1E2A5D18005003EB /* Supporting Files */,
 				3A3184E71E2A8DBE00EAED83 /* BikeService.h */,
@@ -149,6 +183,7 @@
 		DBB22CE28DAC5ABB2527F41E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A3185021E2BC62000EAED83 /* MapKit.framework */,
 				558DCB88BA024339D430892B /* Pods_MobiliBike.framework */,
 			);
 			name = Frameworks;
@@ -282,9 +317,12 @@
 				3AFA61541E2A5D18005003EB /* ViewController.m in Sources */,
 				3A3184E01E2A63B700EAED83 /* LoginForm.m in Sources */,
 				3A3184F71E2A937000EAED83 /* RegisterForm.m in Sources */,
+				3A3185011E2BC45E00EAED83 /* MapController.m in Sources */,
 				3AFA61511E2A5D18005003EB /* AppDelegate.m in Sources */,
+				3A3184FB1E2BB6A100EAED83 /* DeliverForm.m in Sources */,
 				3A3184F41E2A933E00EAED83 /* RegisterController.m in Sources */,
 				3A3184EF1E2A927B00EAED83 /* UIViewController+AlertUtil.m in Sources */,
+				3A3184FE1E2BBA7900EAED83 /* DeliverController.m in Sources */,
 				3AFA614E1E2A5D18005003EB /* main.m in Sources */,
 				3A3184E61E2A693D00EAED83 /* LoginController.m in Sources */,
 			);

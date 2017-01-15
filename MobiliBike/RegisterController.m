@@ -69,7 +69,7 @@
             [self showAlertWithMessage:error.localizedDescription];
         }
         else {
-            [AuthInfo updateToken:token type:tokenType expiration:expirationDate];
+            [[AuthInfo sharedInstance] updateToken:token type:tokenType expiration:expirationDate];
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.navigationController dismissViewControllerAnimated:YES completion:nil];

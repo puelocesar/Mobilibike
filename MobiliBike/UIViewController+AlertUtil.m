@@ -11,7 +11,11 @@
 @implementation UIViewController (AlertUtil)
 
 -(void)showAlertWithMessage:(NSString*)message {
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [self showAlertWithTitle:@"Error" message:message];
+}
+
+-(void)showAlertWithTitle:(NSString*)title message:(NSString*)message {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action) {}]];
     

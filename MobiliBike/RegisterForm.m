@@ -20,15 +20,11 @@
 }
 
 -(NSDictionary*)CEPField {
-    return @{ FXFormFieldHeader: @"" };
-}
-
--(NSDictionary*)aboutField {
-    return @{ FXFormFieldHeader: @"" };
+    return @{ FXFormFieldHeader: @"Outros dados" };
 }
 
 -(NSDictionary*)ownerFirstNameField {
-    return @{ FXFormFieldHeader: @"" };
+    return @{ FXFormFieldHeader: @"Dados do proprietário" };
 }
 
 -(NSDictionary*)passwordField {
