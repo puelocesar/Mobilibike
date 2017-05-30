@@ -10,48 +10,32 @@
 
 @implementation DeliverForm
 
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        self.runDescription = @"oi";
-//        self.AddressStreet1 = @"Rua Salema";
-//        self.AddressNumber1 = @(486);
-//        self.AddressCity1 = @"Bombinhas";
-//        
-//        self.AddressStreet2 = @"Rua Leopoldo Zarling";
-//        self.AddressNumber2 = @(486);
-//        self.AddressCity2 = @"Bombinhas";
-//    }
-//    return self;
-//}
-
 -(NSArray *)fields {
     return @[
                 @{ FXFormFieldKey: @"runDescription",
-                   FXFormFieldTitle: @"Descrição" },
+                   FXFormFieldTitle: @"Description" },
                 
-                @{ FXFormFieldHeader: @"Ponto de partida",
+                @{ FXFormFieldHeader: @"Starting point",
                    FXFormFieldKey: @"AddressStreet1",
-                   FXFormFieldTitle: @"Endereço" },
+                   FXFormFieldTitle: @"Address" },
                 
                 @{ FXFormFieldKey: @"AddressNumber1",
-                   FXFormFieldTitle: @"Número" },
+                   FXFormFieldTitle: @"Number" },
                 
                 @{ FXFormFieldKey: @"AddressCity1",
-                   FXFormFieldTitle: @"Cidade" },
+                   FXFormFieldTitle: @"City" },
                 
-                @{ FXFormFieldHeader: @"Ponto de entrega",
+                @{ FXFormFieldHeader: @"Delivery Address",
                    FXFormFieldKey: @"AddressStreet2",
-                   FXFormFieldTitle: @"Endereço" },
+                   FXFormFieldTitle: @"Address" },
                 
                 @{ FXFormFieldKey: @"AddressNumber2",
-                   FXFormFieldTitle: @"Número" },
+                   FXFormFieldTitle: @"Number" },
                 
                 @{ FXFormFieldKey: @"AddressCity2",
-                   FXFormFieldTitle: @"Cidade" },
+                   FXFormFieldTitle: @"City" },
                 
-                @{ FXFormFieldKey: @"Calcular rota",
+                @{ FXFormFieldKey: @"Calculate route",
                    FXFormFieldHeader: @"",
                    FXFormFieldAction: @"submit:" }
             ];

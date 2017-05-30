@@ -194,7 +194,7 @@
                 confirmButton.enabled = NO;
             }];
             
-            [self showAlertWithTitle:@"Tudo certo!" message:@"Seu pedido de entrega foi enviado e logo que um biker aceitar o pedido, você receberá uma confirmação da entrega"];
+            [self showAlertWithTitle:@"All set" message:@"Your request was sent"];
         }
     }];
 }

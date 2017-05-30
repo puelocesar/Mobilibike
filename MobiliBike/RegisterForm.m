@@ -15,16 +15,16 @@
 }
 
 -(NSDictionary*)emailField {
-    return @{ FXFormFieldHeader: @"Informações de login",
+    return @{ FXFormFieldHeader: @"Login Information",
               FXFormFieldType: FXFormFieldTypeEmail };
 }
 
 -(NSDictionary*)CEPField {
-    return @{ FXFormFieldHeader: @"Outros dados" };
+    return @{ FXFormFieldHeader: @"Other data" };
 }
 
 -(NSDictionary*)ownerFirstNameField {
-    return @{ FXFormFieldHeader: @"Dados do proprietário" };
+    return @{ FXFormFieldHeader: @"Owner Data" };
 }
 
 -(NSDictionary*)passwordField {

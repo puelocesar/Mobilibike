@@ -38,11 +38,11 @@
     NSMutableArray* errors = [[NSMutableArray alloc] init];
     
     if (!form.client_id || [form.client_id isEqualToString:@""]) {
-        [errors addObject:@"Email não pode estar vazio"];
+        [errors addObject:@"Email can't be empty"];
     }
     
     if (!form.client_secret || [form.client_secret length] < 6) {
-        [errors addObject:@"Senha inválida"];
+        [errors addObject:@"Invalid password"];
     }
     
     if (errors.count > 0) {

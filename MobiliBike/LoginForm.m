@@ -21,7 +21,7 @@
 }
 
 - (NSDictionary *)client_secretField {
-    return @{ FXFormFieldTitle: @"Senha",
+    return @{ FXFormFieldTitle: @"Password",
               FXFormFieldType: @"password" };
 }
 
@@ -33,8 +33,8 @@
 }
 
 - (NSDictionary *)sign_up_buttonField {
-    return @{ FXFormFieldHeader: @"Ainda não tenho login",
-              FXFormFieldTitle: @"Cadastrar-se",
+    return @{ FXFormFieldHeader: @"I don't have a login yet",
+              FXFormFieldTitle: @"Sign up",
               FXFormFieldSegue: @"sign_up" };
 }
 

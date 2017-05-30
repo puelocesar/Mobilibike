@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C48-5p-lxe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C48-5p-lxe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="30" id="td4-Xi-scG"/>
                                     <constraint firstAttribute="width" constant="199" id="xCV-0i-NNu"/>
                                 </constraints>
-                                <state key="normal" title="Nova entrega">
+                                <state key="normal" title="New delivery">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -77,7 +77,7 @@
                             <constraint firstItem="XJK-MD-aIE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="l7d-l7-Sl7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Início" id="794-PT-nMt"/>
+                    <navigationItem key="navigationItem" title="Start" id="794-PT-nMt"/>
                     <connections>
                         <outlet property="loggedLabel" destination="XJK-MD-aIE" id="Ahz-nl-qBQ"/>
                         <segue destination="qIU-h1-HGq" kind="presentation" identifier="auth" id="Jr3-XU-AMy"/>
@@ -87,20 +87,20 @@
             </objects>
             <point key="canvasLocation" x="704.79999999999995" y="293.70314842578711"/>
         </scene>
-        <!--Entrega-->
+        <!--Delivery-->
         <scene sceneID="cST-K6-TKn">
             <objects>
-                <tableViewController title="Entrega" id="UaX-xd-MAw" customClass="DeliverController" sceneMemberID="viewController">
+                <tableViewController title="Delivery" id="UaX-xd-MAw" customClass="DeliverController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vkh-Zb-svN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4lk-b2-hXc">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4lk-b2-hXc" id="iFu-Qk-fQz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1530" y="295"/>
         </scene>
-        <!--Rota-->
+        <!--Route-->
         <scene sceneID="neg-LS-tra">
             <objects>
-                <viewController title="Rota" id="Zre-Sa-3CP" customClass="MapController" sceneMemberID="viewController">
+                <viewController title="Route" id="Zre-Sa-3CP" customClass="MapController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZnM-Ro-NPo"/>
                         <viewControllerLayoutGuide type="bottom" id="FRq-e6-LDp"/>
@@ -174,8 +174,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculando rota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-v8-OXm">
-                                            <rect key="frame" x="127" y="291" width="121" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculating route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-v8-OXm">
+                                            <rect key="frame" x="122.5" y="291" width="130" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -247,7 +247,6 @@
         <!--Login-->
         <scene sceneID="bwf-km-8Ul">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qgG-uD-6se" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController title="Login" id="Oe4-IQ-Eay" customClass="LoginController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="yeJ-b5-ZJt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -255,10 +254,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KwD-CX-r6S">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KwD-CX-r6S" id="GTi-HI-x7r">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -273,24 +272,24 @@
                         <segue destination="45M-sR-FsE" kind="show" identifier="sign_up" id="xQN-CN-df6"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgG-uD-6se" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="1093"/>
         </scene>
-        <!--Cadastro-->
+        <!--Sign up-->
         <scene sceneID="VjF-9P-CA5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9G6-Ka-UaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="Cadastro" id="45M-sR-FsE" customClass="RegisterController" sceneMemberID="viewController">
+                <tableViewController title="Sign up" id="45M-sR-FsE" customClass="RegisterController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="bBy-ee-g9M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lSy-Rl-UPL">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lSy-Rl-UPL" id="ocJ-U2-DWz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -301,6 +300,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9G6-Ka-UaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2417" y="1093"/>
         </scene>

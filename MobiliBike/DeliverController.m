@@ -38,7 +38,7 @@
     if (!form.runDescription || !form.AddressCity1 || !form.AddressNumber1 || !form.AddressStreet1 ||
         !form.AddressCity2 || !form.AddressNumber2 || !form.AddressStreet2) {
         
-        [self showAlertWithMessage:@"Todos os campos são obrigatórios"];
+        [self showAlertWithMessage:@"All fields are mandatory"];
     }
     else
         [self performSegueWithIdentifier:@"showMap" sender:self];

@@ -49,20 +49,20 @@
 }
 
 -(void)clearToken {
-    self.token = nil;
-    self.expirationDate = nil;
-    self.companyId = nil;
-    self.email = nil;
-    
-    [self syncData];
-}
-
--(void)syncData {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     [defaults removeObjectForKey:@"companyId"];
     [defaults removeObjectForKey:@"email"];
     [defaults removeObjectForKey:@"token"];
     [defaults removeObjectForKey:@"expirationDate"];
+    [defaults synchronize];
+}
+
+-(void)syncData {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.companyId forKey:@"companyId"];
+    [defaults setObject:self.email forKey:@"email"];
+    [defaults setObject:self.token forKey:@"token"];
+    [defaults setObject:self.expirationDate forKey:@"expirationDate"];
     [defaults synchronize];
 }
 
